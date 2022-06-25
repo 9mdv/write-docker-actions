@@ -1,7 +1,6 @@
 import requests
 import random
 import sys
-import json
 
 # Make an HTTP GET request to the cat-fact API
 cat_url = "https://meowfacts.herokuapp.com/"
@@ -14,7 +13,7 @@ fact_list = []
 
 # Add the "text" of every object into the fact_list list
 for fact in r_obj_list:
-    fact_list.append(json.loads(r_obj_list)['data'][0])
+    fact_list.append(fact["data"][0])
 
 # Select a random fact from the fact_list and return it
 # into a variable named random_fact so we can use it
