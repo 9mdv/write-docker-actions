@@ -13,7 +13,7 @@ fact_list = []
 
 # Add the "text" of every object into the fact_list list
 for fact in r_obj_list:
-    fact_list.append(fact["data"[0]])
+    fact_list.append(fact.data[0]])
 
 # Select a random fact from the fact_list and return it
 # into a variable named random_fact so we can use it
